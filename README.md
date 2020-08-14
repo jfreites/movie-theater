@@ -14,7 +14,7 @@ git clone https://github.com/jfreites/movie-theater.git
 
 En el archivo docker-compose.yml, buscar la linea 43 y replazar el nombre jonathan por el usuario de tu equipo (importante si usas Linux).
 
-Luegp dentro de del folder clonado ejecutar:
+Luego dentro del folder clonado ejecutar:
 
 ```
 docker-compose up -d
@@ -42,5 +42,9 @@ Para conocer los requests que puedes hacer al API consulta la collection de [POS
 
 
 
+### Posibles problemas
 
+- Si al tratar de ejecutar las migraciones se obtiene un error "MYSQL [2002] Connection refused": detener los containers con docker-compose stop y volverlos a ejecutar sin el flag -d. De esta manera se pueden ver los logs, a veces ese error ocurre pues MySQL no ha terminado de levantar los servicios.
+
+- Error de permisos en Laravel cuando se navega en la dirección http://localhost:8080: si estas usando Linux, asegurarse de cambiar el usuario en el docker-compose.yml. Si se esta usando Windows o Mac no debería pasar. Verificar con que usuario se esta ejecutando docker en ese caso.
 
