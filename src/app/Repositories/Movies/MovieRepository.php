@@ -12,7 +12,7 @@ class MovieRepository
      */
     public static function getAll(array $search = []) : Collection
     {
-        // Use search for something
+        // TODO: implementing a search funcionality
         return Movie::latest()->get();
     }
 }

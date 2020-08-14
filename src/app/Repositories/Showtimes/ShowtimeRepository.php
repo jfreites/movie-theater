@@ -12,7 +12,7 @@ class ShowtimeRepository
      */
     public static function getAll(array $search = []) : Collection
     {
-        // UTODO: a search funcionality can be implemented here...
+         // TODO: implementing a search funcionality
         return Showtime::all();
     }
 }
