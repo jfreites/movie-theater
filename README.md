@@ -3,7 +3,7 @@
 ### Prepativos
 
 Debes tener docker instalado en tu equipo y si tienes algun contenedor corriendo mejor detenerlo, para evitar bloqueo de puertos.
-Si prefieres usar Homestead o Valet haz caso omiso de los pasos siguientes, el codebase esta dentro del folder srcc recuerda cambiar los valores para la DB en el archivo .env
+Si prefieres usar Homestead o Valet haz caso omiso de los pasos siguientes, el codebase esta dentro del folder src recuerda cambiar los valores para la DB en el archivo .env
 
 
 Clonar este repositorio
@@ -12,7 +12,7 @@ Clonar este repositorio
 git clone https://github.com/jfreites/movie-theater.git
 ```
 
-En el archivo docker-compose.yml, buscar la linea 43 y replazar el nombre jonathan por el usuario de tu equipo (importante si usas Linux).
+En el archivo docker-compose.yml, buscar la linea 43 y replazar el nombre jonathan por el usuario de tu equipo (importante si usas Linux). Cambiar el archivo .env.example a .env y agregar los datos del servicio de Cloudinary para que la subida de archivos funcione.
 
 Luego dentro del folder clonado ejecutar:
 
